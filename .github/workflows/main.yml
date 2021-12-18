@@ -8,12 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Here is the deployment action
-      - name: Upload from public_html via FTP
+      - name: Upload from dist via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
           server: adilsonxdesouza.somee.com/www.adilsonxdesouza.somee.com
           user: adilsonxavier
           password: Maysaaxs2004*
-          local_dir: "./src"
+          local_dir: "./dist"
           # remote_dir: public_html/
-          delete: "false"
+          delete: "true"
