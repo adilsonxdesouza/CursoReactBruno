@@ -10,7 +10,7 @@ jobs:
       # Here is the deployment action
       - name: Upload from dist via FTP
         uses: airvzxf/ftp-deployment-action@latest
-        with:
+        with: 
           server: adilsonxdesouza.somee.com/www.adilsonxdesouza.somee.com
           user: adilsonxavier
           password: Maysaaxs2004*

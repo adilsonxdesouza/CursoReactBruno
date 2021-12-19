@@ -10,7 +10,7 @@ export default function AppFormularios () {
     }
     return (
         <>
-            <label> Digite seu nome</label>
+            <label> Digite seu nome 2235</label>
             <input
                 type="text"
                 value={nome}
