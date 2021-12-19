@@ -34,6 +34,7 @@ export default function AppFormularios () {
                 <optgroup label="German Cars">
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
+                    <option value="fusca">Audi</option>
                 </optgroup>
             </select>
             <p>O carro é {carro}</p>

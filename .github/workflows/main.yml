@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       # Here is the deployment action
       - name: Upload from dist via FTP
-        uses: airvzxf/ftp-deployment-action@latest
+        uses: qualquer coisa # airvzxf/ftp-deployment-action@latest
         with:
           server: adilsonxdesouza.somee.com/www.adilsonxdesouza.somee.com
           user: adilsonxavier
