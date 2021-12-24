@@ -16,10 +16,12 @@ export default function AppRouteNativo() {
     );
 
     const linkPagina = (p) => {
+        const baseurl = window.location.host // url sem os parâmetros da query string
+
         if (p >= 1) {
-            window.open(`http://localhost:3030?${p}`, "_self");
+            window.open(`http://${baseurl}?${p}`, "_self");
         } else {
-            window.open("http://localhost:3030", "_self");
+            window.open("http://"+baseurl, "_self");
         } 
 
     }
