@@ -9,8 +9,8 @@ export default function AppRouteNativo() {
     React.useEffect(() => {
         const url = window.location.href;
         const p = url.split("?");
-        //linkPagina(p[1]);
-        setPagina(p[1]);
+        //linkPagina(p[1]); // se chamar este método por aqui gera um loop infinito por que o useEffect  é como um Page Load
+        setPagina(p[1]);    // e é executado toda vez que a página é executada
         }
 
     );
