@@ -13,6 +13,7 @@ export default function AppUseEffect() {
             document.title = `Contagem: ${contagem}`
 
         }      //O use effect é chamado quando a pag é carregada ou atualizada
+               // É como se fosse o PageLoad() do C# Web Forms
     );
 
     const [contagem, setContagem] = React.useState(0);
