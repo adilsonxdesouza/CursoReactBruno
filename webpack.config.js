@@ -9,7 +9,7 @@ module.exports = {
     devServer: {
         port: 3030,
         watchContentBase: true,
-       // historyApiFallback: true, // corrige o erro cannot get pagina do  <Switch> < Route path="/pag1" component={ Pag1 } /></Swith>
+        // historyApiFallback: true, // corrige o erro cannot get pagina do  <Switch> < Route path="/pag1" component={ Pag1 } /></Swith>
     },
     module: {
         rules: [
@@ -24,7 +24,7 @@ module.exports = {
                 test: /\.(scss|css)$/,
                 use: [
                     'style-loader',
-                   // MiniCssExtractPlugin.loader,
+                    // MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
                 ],
