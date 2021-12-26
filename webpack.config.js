@@ -20,6 +20,13 @@ module.exports = {
                     loader: 'babel-loader'
                 }
             },
+            ///////
+            // As 2  regras abaixo servem para difenciar os arquivos css / scss normais dos arquivos usados em modulos css no react
+            // Como o webpack exige que os arquivos css usados para módulos tenha como nome algumacoisa.module.css esta exigência
+            // é aproveitada nos arquivos abaixo : A primeira regra ( sem módulo ) usa o " exclude: /\.module\.css$/ " e a 
+            // segunda regra (com módulo ) usa o  "include: /\.module\.css$/" . Sem estes elementos include e exclude como estão
+            // Abaixo é gerado erro na compilação pelo webpack.
+            // Note que não foi necessário instalar nenhum plugin adicional para usar o module css
             {
                 test: /\.(scss|css)$/,
                 use: [
@@ -28,7 +35,26 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ],
+                exclude: /\.module\.css$/
             },
+            //////
+            {
+                test: /\.(css|scss)$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            modules: {
+                                localIdentName: "[name]__[local]___[hash:base64:5]",
+                            },
+                        }
+                    }
+                ],
+                include: /\.module\.css$/
+            },
+            //////
             {
                 test: /\.(jpg|png|svg|gif)$/,
                 loader: 'file-loader',
