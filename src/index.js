@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 //import AppFormularios from "./AppFormularios";
 //import AppStateUnico from "./AppStateUnico"
 //import AppGlobais from "./AppGlobais";
-import AppCalculadora from "./AppCalculadora";
+import AppStyledComponents from "./AppStyledComponents";
 //import App from "./App";
 require('file-loader?name=[name].[ext]!./index.html'); // a ausência desta linha gera o erro de directory listing (mostrar o diretório ao invez da página index.html)
 
@@ -14,7 +14,8 @@ const app = document.getElementById("app");
 
     ReactDOM.render(
         <>
-            <AppCalculadora/>
+            <AppStyledComponents/>
+         
         </>,
 
         app
