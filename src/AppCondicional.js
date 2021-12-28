@@ -12,9 +12,25 @@ export default function AppCondicional() {
                 return <h1> Boa noite </h1>;
     }
 
+    const greeting2 = () => {
+        const hora = new Date().getHours();
+        return (
+            <div>
+                <h1> sou do greeting 2 </h1>
+                {
+                    (10 > 5) && (         // Aqui é uma outra forma de inserir  uma tag condicional aceita pelo React: 
+                        <div>       {/*  { condiçao && (conteúdo )} */}
+                            bom dia greeting 2
+                        </div>
+                    )
+                }
+            </div>)
+    }
+   
+
     return (
         <>
-            {greeting()}
+            {greeting2()}
            
         </>
     );
