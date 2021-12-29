@@ -1,0 +1,14 @@
+﻿.social_list {
+    display: flex; /* Deixa um do lado do outro*/
+    justify-content: center; /*Centraliza na  horizontal*/
+    align-items: center; /*Centraliza na vertical*/
+    list-style:none;
+}
+
+.social_list li{
+    margin:0 1em;
+}
+.social_list svg{  /* o svg que é o ícone pode ser tratado pelo css como se fosse uma fonte*/
+    font-size:1.5em;
+    cursor:pointer;
+}
