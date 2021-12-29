@@ -8,10 +8,10 @@ export default  function NavBar () {
                 <Link to="/">Home</Link>  {/*com o <Link> o conteúdo da página é carregado sem refresh*/}
             </li>
             <li>
-                <Link to="/empresa">Empresa</Link>
+                <Link to="/empresa">Empresa alt</Link>
             </li>
             <li>
-                <a href="/empresa">Empresa link normal</a> {/*com o <a> a pagina é recarregada sem refresh*/}
+                <a href="/empresa">Empresa link normal</a> {/*com o <a> a pagina é recarregada  com refresh*/}
             </li>
         </ul>
         );

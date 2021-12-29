@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PaginaHome from "./paginas/PaginaHome";
 import PaginaEmpresa from "./paginas/PaginaEmpresa";
 import NavBar from "./paginas/NavBar";
-import Footer from "./paginas/Footer";
+import { default as Footer } from "./paginas/FooterReactIcons"; // Forma de importar um export default com alias (presisa 
+                                                                // da palavra reservada "default")
 
 
 export default function AppReactRouter() {
