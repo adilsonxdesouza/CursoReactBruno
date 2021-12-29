@@ -9,7 +9,7 @@ module.exports = {
     devServer: {
         port: 3040,
         watchContentBase: true,
-        // historyApiFallback: true, // corrige o erro cannot get pagina do  <Switch> < Route path="/pag1" component={ Pag1 } /></Swith>
+        historyApiFallback: true, // corrige o erro cannot get pagina do  <Switch> < Route path="/pag1" component={ Pag1 } /></Swith>
     },
     module: {
         rules: [
