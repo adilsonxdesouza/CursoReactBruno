@@ -11,4 +11,5 @@
 .social_list svg{  /* o svg que é o ícone pode ser tratado pelo css como se fosse uma fonte*/
     font-size:1.5em;
     cursor:pointer;
+    color:blue;
 }
